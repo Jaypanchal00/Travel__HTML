@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #181818;
+            color: #f8f9fa;
+            scroll-behavior: smooth;
+        }
+
+        .navbar,
+        .footer {
+            background-color: #000;
+            transition: background-color 0.5s;
+        }
+
+        .navbar.scrolled {
+            background-color: #333;
+        }
+
+        .card {
+            background-color: #222;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .gallery img {
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+
+        .gallery-img {
+            height: 250px; /* Set desired height */
+            object-fit: cover; /* Ensures image covers the container without distortion */
+            width: 100%; /* Ensures full width of the column */
+        }
+        
+
+        .testimonial p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .faq {
+            cursor: pointer;
+        }
+
+        .faq:hover {
+            background-color: #333;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+    
+        .social-feed a {
+            text-decoration: none;
+            color: inherit;
+            margin: 0 10px; /* Add spacing between icons */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-feed a:hover {
+            transform: scale(1.2); /* Enlarge on hover */
+            color: #ffc107; /* Optional hover color (gold) */
+        }
+
+        footer {
+            background-color: #212529; /* Dark background */
+            color: #fff; /* Light text */
+        }
+        header h1{
+            color: rgb(195, 0, 255);
+        }
+        #packages a{
+            background-color: green;
+            border: solid white;
+            
+        }
+       
+        
+        .card-img-top {
+            height: 200px; /* Adjust height as needed */
+            object-fit: cover; /* Ensures images fit within the dimensions without distortion */
+            width: 100%; /* Ensures full width */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JourneyJoy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+<header class="hero-section bg-dark text-white text-center py-5 mt-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Embark on Your Dream Vacation</h1>
+        <p class="lead mt-3">Explore the world with our exclusive and customized travel packages</p>
+        <a href="#packages" class="btn btn-lg btn-primary mt-4">Explore Now</a>
+    </div>
+</header>
+
+
+    <!-- Trip Packages Section -->
+<section id="packages" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Popular Trip Packages</h2>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/free-photo/sand-sunny-sea-nature-tropic_1203-5695.jpg?w=740" class="card-img-top" alt="Beach Getaway">
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Getaway</h5>
+                        <p class="card-text">Relax on pristine beaches and enjoy tropical sunsets.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/woman-tourist-backpacker-hiking-mountains-recreational-adventure-lifestyle_960396-782243.jpg?w=740" class="card-img-top" alt="Mountain Adventure">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Adventure</h5>
+                        <p class="card-text">Hike, climb, and discover breathtaking mountain landscapes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/free-photo/close-up-man-prepared-traveling_23-2151030905.jpg?w=740" class="card-img-top" alt="City Explorer">
+                    <div class="card-body">
+                        <h5 class="card-title">City Explorer</h5>
+                        <p class="card-text">Discover vibrant cityscapes with endless culture and nightlife.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers Section -->
+        <h2 class="text-center my-5">Special Offers</h2>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/free-vector/flamingo-beach-background-with-summer-offers_23-2147626868.jpg?w=740" class="card-img-top" alt="Discounted Trip">
+                    <div class="card-body">
+                        <h5 class="card-title">20% Off Beach Packages</h5>
+                        <p class="card-text">Book now and save big on our beach vacation packages!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Grab the Offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/travel-sale-flyer-template_1121250-383748.jpg?w=740" class="card-img-top" alt="Adventure Packages">
+                    <div class="card-body">
+                        <h5 class="card-title">Buy 1 Get 1 Free Mountain Adventure</h5>
+                        <p class="card-text">Bring a friend for free when you book our mountain adventure!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Grab the Offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/free-photo/side-view-woman-taking-photos-friends_23-2149512378.jpg?w=740" class="card-img-top" alt="Cultural Experience">
+                    <div class="card-body">
+                        <h5 class="card-title">Free Cultural Experience with Every Booking</h5>
+                        <p class="card-text">Experience local culture with complimentary guided tours!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary w-100">Grab the Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Trip Planner Section -->
+    <section id="trip-planner" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Plan Your Trip</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="tripType" class="form-label">Trip Type</label>
+                        <select class="form-select" id="tripType">
+                            <option selected>Choose...</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="relaxation">Relaxation</option>
+                            <option value="culture">Culture</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="duration" class="form-label">Duration (Days)</label>
+                        <input type="number" class="form-control" id="duration" placeholder="Enter number of days">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="budget" class="form-label">Budget ($)</label>
+                        <input type="number" class="form-control" id="budget" placeholder="Enter your budget">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Recommendations</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Travel Checklist Section -->
+    <section id="travel-checklist" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Generate Your Travel Checklist</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="tripDestination" class="form-label">Trip Destination</label>
+                    <input type="text" class="form-control" id="tripDestination" placeholder="Where are you going?">
+                </div>
+                <button type="submit" class="btn btn-primary">Generate Checklist</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Currency Converter Section -->
+    <section id="currency-converter" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Currency Converter</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Amount to convert">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="currency" class="form-label">Currency</label>
+                        <select class="form-select" id="currency">
+                            <option selected>Choose currency...</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Convert</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Gallery</h2>
+        <div class="row gallery g-4">
+            <div class="col-lg-4 col-md-6">
+                <a href="https://via.placeholder.com/600x400" data-lightbox="gallery">
+                    <img src="https://img.freepik.com/free-photo/side-view-woman-taking-photos-friends_23-2149512378.jpg?t=st=1729153401~exp=1729157001~hmac=d19ed25c5ca89d7ad40b4366f21d8b14d900ab3f354160f30a1ad2a610f16a63&w=740" 
+                         class="img-fluid rounded gallery-img" 
+                         alt="Gallery Image 1">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <a href="https://via.placeholder.com/600x400" data-lightbox="gallery">
+                    <img src="https://t3.ftcdn.net/jpg/08/18/35/04/360_F_818350455_cIOzSamr5yeWByJxoCfEwz3iFK7yAVMp.jpg" 
+                         class="img-fluid rounded gallery-img" 
+                         alt="Gallery Image 2">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <a href="https://via.placeholder.com/600x400" data-lightbox="gallery">
+                    <img src="https://www.signatureluxurytravel.com.au/wp-content/uploads/2019/02/Patagonia-Chilean-Fjords-Patagonian-Hike.jpg" 
+                         class="img-fluid rounded gallery-img" 
+                         alt="Gallery Image 3">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card testimonial">
+                        <div class="card-body">
+                            <p class="card-text">"Travel With Us made my vacation unforgettable! Highly recommend their services!"</p>
+                            <div class="blockquote-footer">Jay Panchal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <div class="card testimonial">
+                        <div class="card-body">
+                            <p class="card-text">"Amazing trip planning and execution! Everything was perfect!"</p>
+                            <div class="blockquote-footer">Dharmik Vaghela</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Travel Blogs</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/top-10-travel-destinations-2024-explore-worlds-best-adventures_606187-17114.jpg" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Destinations for 2024</h5>
+                            <p class="card-text">Discover the must-visit places for your next vacation!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://www.ubagroup.com/57-marina/wp-content/uploads/sites/4/2024/06/BLOG-IMAGES-34.jpg" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel Tips for First-Time Flyers</h5>
+                            <p class="card-text">Everything you need to know before your first flight.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="https://aperian.com/wp-content/uploads/2020/04/blog_cultural-etiquette-and-social-distancing-around-the-world_.png" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural Etiquette Around the World</h5>
+                            <p class="card-text">Know the do's and don'ts when visiting different countries.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            What is included in the trip packages?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our trip packages typically include accommodations, meals, transportation, and guided tours.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Can I customize my trip?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body ">
+                            Yes! We offer customizable packages to suit your preferences and needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button faq" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            How can I contact customer support?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can reach our customer support via the contact form on our website or through our live chat feature.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <p class="text-center">We are a team of passionate travelers dedicated to helping you create unforgettable experiences. With years of experience in the travel industry, we offer personalized service to ensure your trip exceeds your expectations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p class="mb-3">&copy; 2024 Travel With Us. All rights reserved.</p>
+            <div class="social-feed">
+                <h5 class="mb-3">Follow Us on Social Media</h5>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://x.com/?lang=en" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/lightbox.min.js"></script>
+    <script>
+        // Navbar background change on scroll
+        window.onscroll = function () {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+            document.getElementById('backToTop').style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+
+</html>
