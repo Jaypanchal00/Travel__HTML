@@ -1,0 +1,119 @@
+body {
+    background-color: #181818;
+    color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+.navbar,
+.footer {
+    background-color: #000;
+    transition: background-color 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: #333;
+}
+
+.card {
+    background-color: #222;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.gallery img {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.gallery-img {
+    height: 250px;
+    /* Set desired height */
+    object-fit: cover;
+    /* Ensures image covers the container without distortion */
+    width: 100%;
+    /* Ensures full width of the column */
+}
+
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.faq {
+    cursor: pointer;
+}
+
+.faq:hover {
+    background-color: #333;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.social-feed a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+    /* Add spacing between icons */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.social-feed a:hover {
+    transform: scale(1.2);
+    /* Enlarge on hover */
+    color: #ffc107;
+    /* Optional hover color (gold) */
+}
+
+footer {
+    background-color: #212529;
+    /* Dark background */
+    color: #fff;
+    /* Light text */
+}
+
+header h1 {
+    color: white;
+}
+
+#packages a {
+    background-color: green;
+    border: solid white;
+
+}
+
+
+.card-img-top {
+    height: 200px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    /* Ensures images fit within the dimensions without distortion */
+    width: 100%;
+    /* Ensures full width */
+}
